@@ -1,6 +1,6 @@
 ﻿namespace Encryption_and_Decryption_Application_GUI
 {
-    partial class Form1
+    partial class MainWindowForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -38,11 +38,11 @@
             // button1
             // 
             button1.BackColor = Color.FromArgb(0, 229, 255);
-            button1.Cursor = Cursors.Hand; 
-            button1.FlatStyle = FlatStyle.Flat;                
+            button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseDownBackColor = ColorTranslator.FromHtml("#fff");
-            button1.FlatAppearance.MouseOverBackColor = ColorTranslator.FromHtml("#fff");
+            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 255, 255);
+            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 255, 255);
+            button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 20F);
             button1.ForeColor = Color.FromArgb(18, 18, 18);
             button1.Location = new Point(285, 350);
@@ -51,16 +51,17 @@
             button1.TabIndex = 3;
             button1.Text = "Atbash";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
             button2.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             button2.BackColor = Color.FromArgb(0, 229, 255);
             button2.Cursor = Cursors.Hand;
-            button2.FlatStyle = FlatStyle.Flat;
             button2.FlatAppearance.BorderSize = 0;
-            button2.FlatAppearance.MouseDownBackColor = ColorTranslator.FromHtml("#fff");
-            button2.FlatAppearance.MouseOverBackColor = ColorTranslator.FromHtml("#fff");
+            button2.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 255, 255);
+            button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 255, 255);
+            button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 20F);
             button2.ForeColor = Color.FromArgb(18, 18, 18);
             button2.Location = new Point(450, 450);
@@ -69,16 +70,17 @@
             button2.TabIndex = 4;
             button2.Text = "Simple Substitution";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
             button3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             button3.BackColor = Color.FromArgb(0, 229, 255);
             button3.Cursor = Cursors.Hand;
-            button3.FlatStyle = FlatStyle.Flat;
             button3.FlatAppearance.BorderSize = 0;
-            button3.FlatAppearance.MouseDownBackColor = ColorTranslator.FromHtml("#fff");
-            button3.FlatAppearance.MouseOverBackColor = ColorTranslator.FromHtml("#fff");
+            button3.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 255, 255);
+            button3.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 255, 255);
+            button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Segoe UI", 20F);
             button3.ForeColor = Color.FromArgb(18, 18, 18);
             button3.Location = new Point(615, 350);
@@ -111,7 +113,7 @@
             label2.TabIndex = 7;
             label2.Text = "CRYPTIFY";
             // 
-            // Form1
+            // MainWindowForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -123,7 +125,7 @@
             Controls.Add(button2);
             Controls.Add(button1);
             ForeColor = Color.FromArgb(0, 229, 255);
-            Name = "Form1";
+            Name = "MainWindowForm";
             Text = "CRYPTIFY";
             Load += Form1_Load;
             ResumeLayout(false);

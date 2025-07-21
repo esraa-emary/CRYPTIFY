@@ -1,6 +1,6 @@
 namespace Encryption_and_Decryption_Application_GUI
 {
-    internal static class Program
+    internal static class MainWindow
     {
         /// <summary>
         ///  The main entry point for the application.
@@ -11,7 +11,7 @@ namespace Encryption_and_Decryption_Application_GUI
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new MainWindowForm());
         }
     }
 }
