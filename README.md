@@ -1,4 +1,4 @@
-# Cryptify
+# CRYPTIFY
 
 This is a GUI application (built with C#) that allows users to encrypt and decrypt messages using a collection of classical cipher techniques.
 The user-friendly interface makes it easy to choose a cipher, enter your message, and view the encrypted or decrypted output instantly.
