@@ -31,7 +31,7 @@ namespace Encryption_and_Decryption_Application_GUI
             {
                 string result = atbash.cipher(textBox1.Text);
                 label1.Text = "Encryption Text";
-                textBox2.Text = result;
+                button4.Text = result;
                 checkFirst = false;
             }
             else
@@ -46,7 +46,7 @@ namespace Encryption_and_Decryption_Application_GUI
             {
                 string result = atbash.decipher(textBox1.Text);
                 label1.Text = "Decryption Text";
-                textBox2.Text = result;
+                button4.Text = result;
                 checkFirst = false;
             }
             else
