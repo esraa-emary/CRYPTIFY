@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindowForm));
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
@@ -37,8 +38,8 @@
             // 
             // button1
             // 
-            button1.Anchor = AnchorStyles.Top;
-            button1.BackColor = ColorTranslator.FromHtml("#31cb00");
+            button1.Anchor = AnchorStyles.None;
+            button1.BackColor = Color.FromArgb(49, 203, 0);
             button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 255, 255);
@@ -53,19 +54,11 @@
             button1.Text = "Atbash";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
-            button1.MouseEnter += (s, e) =>
-            {
-                button1.ForeColor = ColorTranslator.FromHtml("#31cb00");
-            };
-            button1.MouseLeave += (s, e) =>
-            {
-                button1.ForeColor = Color.FromArgb(18, 18, 18);
-            };
             // 
             // button2
             // 
-            button2.Anchor = AnchorStyles.Top;
-            button2.BackColor = ColorTranslator.FromHtml("#31cb00");
+            button2.Anchor = AnchorStyles.None;
+            button2.BackColor = Color.FromArgb(49, 203, 0);
             button2.Cursor = Cursors.Hand;
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 255, 255);
@@ -80,19 +73,11 @@
             button2.Text = "Simple Substitution";
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
-            button2.MouseEnter += (s, e) =>
-            {
-                button2.ForeColor = ColorTranslator.FromHtml("#31cb00");
-            };
-            button2.MouseLeave += (s, e) =>
-            {
-                button2.ForeColor = Color.FromArgb(18, 18, 18);
-            };
             // 
             // button3
             // 
-            button3.Anchor = AnchorStyles.Top;
-            button3.BackColor = ColorTranslator.FromHtml("#31cb00");
+            button3.Anchor = AnchorStyles.None;
+            button3.BackColor = Color.FromArgb(49, 203, 0);
             button3.Cursor = Cursors.Hand;
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 255, 255);
@@ -107,18 +92,10 @@
             button3.Text = "Baconoian";
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
-            button3.MouseEnter += (s, e) =>
-            {
-                button3.ForeColor = ColorTranslator.FromHtml("#31cb00");
-            };
-            button3.MouseLeave += (s, e) =>
-            {
-                button3.ForeColor = Color.FromArgb(18, 18, 18);
-            };
             // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.Top;
+            label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20F);
             label1.Location = new Point(260, 170);
@@ -130,7 +107,7 @@
             // 
             // label2
             // 
-            label2.Anchor = AnchorStyles.Top;
+            label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 35F, FontStyle.Bold);
             label2.Location = new Point(470, 100);
@@ -150,7 +127,8 @@
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
-            ForeColor = ColorTranslator.FromHtml("#31cb00");
+            ForeColor = Color.FromArgb(49, 203, 0);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MainWindowForm";
             Text = "CRYPTIFY";
             Load += Form1_Load;

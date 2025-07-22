@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SimpleSubstitutionForm));
             label1 = new Label();
             button1 = new Button();
             button2 = new Button();
@@ -41,7 +42,7 @@
             // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.Top;
+            label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20F);
             label1.Location = new Point(907, 122);
@@ -52,7 +53,7 @@
             // 
             // button1
             // 
-            button1.Anchor = AnchorStyles.Top;
+            button1.Anchor = AnchorStyles.None;
             button1.BackColor = Color.FromArgb(49, 203, 0);
             button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
@@ -68,18 +69,10 @@
             button1.Text = "Check Text";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
-            button1.MouseEnter += (s, e) =>
-            {
-                button1.ForeColor = ColorTranslator.FromHtml("#31cb00");
-            };
-            button1.MouseLeave += (s, e) =>
-            {
-                button1.ForeColor = Color.FromArgb(18, 18, 18);
-            };
             // 
             // button2
             // 
-            button2.Anchor = AnchorStyles.Top;
+            button2.Anchor = AnchorStyles.None;
             button2.BackColor = Color.FromArgb(49, 203, 0);
             button2.Cursor = Cursors.Hand;
             button2.FlatAppearance.BorderSize = 0;
@@ -95,18 +88,10 @@
             button2.Text = "Encrypt";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
-            button2.MouseEnter += (s, e) =>
-            {
-                button2.ForeColor = ColorTranslator.FromHtml("#31cb00");
-            };
-            button2.MouseLeave += (s, e) =>
-            {
-                button2.ForeColor = Color.FromArgb(18, 18, 18);
-            };
             // 
             // button3
             // 
-            button3.Anchor = AnchorStyles.Top;
+            button3.Anchor = AnchorStyles.None;
             button3.BackColor = Color.FromArgb(49, 203, 0);
             button3.Cursor = Cursors.Hand;
             button3.FlatAppearance.BorderSize = 0;
@@ -122,18 +107,10 @@
             button3.Text = "Decrypt";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
-            button3.MouseEnter += (s, e) =>
-            {
-                button3.ForeColor = ColorTranslator.FromHtml("#31cb00");
-            };
-            button3.MouseLeave += (s, e) =>
-            {
-                button3.ForeColor = Color.FromArgb(18, 18, 18);
-            };
             // 
             // textBox1
             // 
-            textBox1.Anchor = AnchorStyles.Top;
+            textBox1.Anchor = AnchorStyles.None;
             textBox1.BackColor = Color.White;
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Cursor = Cursors.IBeam;
@@ -148,7 +125,7 @@
             // 
             // toolStripContainer1
             // 
-            toolStripContainer1.Anchor = AnchorStyles.Top;
+            toolStripContainer1.Anchor = AnchorStyles.None;
             // 
             // toolStripContainer1.ContentPanel
             // 
@@ -161,7 +138,7 @@
             // 
             // button4
             // 
-            button4.Anchor = AnchorStyles.Top;
+            button4.Anchor = AnchorStyles.None;
             button4.BackColor = Color.FromArgb(49, 203, 0);
             button4.Enabled = false;
             button4.FlatAppearance.BorderSize = 0;
@@ -177,7 +154,7 @@
             // 
             // textBox2
             // 
-            textBox2.Anchor = AnchorStyles.Top;
+            textBox2.Anchor = AnchorStyles.None;
             textBox2.BackColor = Color.White;
             textBox2.BorderStyle = BorderStyle.None;
             textBox2.Cursor = Cursors.IBeam;
@@ -205,6 +182,7 @@
             Controls.Add(button1);
             Controls.Add(label1);
             ForeColor = Color.FromArgb(49, 203, 0);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "SimpleSubstitutionForm";
             Text = "Simple Substitution";
             toolStripContainer1.ResumeLayout(false);
