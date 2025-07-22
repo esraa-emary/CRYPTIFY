@@ -16,7 +16,7 @@ namespace Encryption_and_Decryption_Application_GUI
             // Check if empty
             if (string.IsNullOrEmpty(text))
             {
-                MessageBox.Show("Error: Text cannot be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error: Text can not be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
 

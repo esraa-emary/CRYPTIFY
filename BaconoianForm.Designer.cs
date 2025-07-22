@@ -67,6 +67,14 @@
             button1.Text = "Check Text";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
+            button1.MouseEnter += (s, e) =>
+            {
+                button1.ForeColor = ColorTranslator.FromHtml("#31cb00");
+            };
+            button1.MouseLeave += (s, e) =>
+            {
+                button1.ForeColor = Color.FromArgb(18, 18, 18);
+            };
             // 
             // button2
             // 
@@ -86,6 +94,14 @@
             button2.Text = "Encrypt";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
+            button2.MouseEnter += (s, e) =>
+            {
+                button2.ForeColor = ColorTranslator.FromHtml("#31cb00");
+            };
+            button2.MouseLeave += (s, e) =>
+            {
+                button2.ForeColor = Color.FromArgb(18, 18, 18);
+            };
             // 
             // button3
             // 
@@ -105,6 +121,14 @@
             button3.Text = "Decrypt";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
+            button3.MouseEnter += (s, e) =>
+            {
+                button3.ForeColor = ColorTranslator.FromHtml("#31cb00");
+            };
+            button3.MouseLeave += (s, e) =>
+            {
+                button3.ForeColor = Color.FromArgb(18, 18, 18);
+            };
             // 
             // textBox1
             // 
