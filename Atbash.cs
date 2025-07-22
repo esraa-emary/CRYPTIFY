@@ -10,7 +10,7 @@ namespace Encryption_and_Decryption_Application_GUI
 {
     internal class Atbash
     {
-        public bool chechText(string text)
+        public bool checkText(string text)
         {
             // Check if empty
             if (string.IsNullOrEmpty(text))

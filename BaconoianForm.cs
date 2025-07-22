@@ -16,5 +16,73 @@ namespace Encryption_and_Decryption_Application_GUI
         {
             InitializeComponent();
         }
+
+        bool checkFirstForEncrypt = false, checkFirstForDecrypt = false, checkText = false;
+        Baconoian baconoian = new Baconoian();
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (baconoian.checkTextForEncrypt(textBox1.Text)) checkFirstForEncrypt = true;
+            if (baconoian.checkTextForDecrypt(textBox1.Text)) checkFirstForDecrypt = true;
+            checkText = true;
+            MessageBox.Show("Text checked!", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (checkText)
+            {
+                if (checkFirstForEncrypt)
+                {
+                    MessageBox.Show("Text is valid!", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    string result = baconoian.cipher(textBox1.Text);
+                    label1.Text = "Encryption Text";
+                    button4.Text = result;
+                    checkFirstForEncrypt = false;
+                    checkFirstForDecrypt = false;
+                    checkText = false;
+                }
+                else
+                {
+                    // Found a non-letter → show error and stop
+                    MessageBox.Show("Error: Text must contain only alphabetic characters.",
+                                    "Validation Error",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Error: You must check text at first.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (checkText)
+            {
+                if (checkFirstForDecrypt)
+                {
+                    MessageBox.Show("Text is valid!", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    string result = baconoian.decipher(textBox1.Text);
+                    label1.Text = "Decryption Text";
+                    button4.Text = result;
+                    checkFirstForEncrypt = false;
+                    checkFirstForDecrypt = false;
+                    checkText = false;
+                }
+                else
+                {
+                    MessageBox.Show("Error: Text must contain only 'a', 'A', 'b', 'B' characters.",
+                                         "Validation Error",
+                                         MessageBoxButtons.OK,
+                                         MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Error: You must check text at first.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

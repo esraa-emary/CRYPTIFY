@@ -22,7 +22,7 @@ namespace Encryption_and_Decryption_Application_GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (atbash.chechText(textBox1.Text)) checkFirst = true;
+            if (atbash.checkText(textBox1.Text)) checkFirst = true;
         }
 
         private void button2_Click(object sender, EventArgs e)

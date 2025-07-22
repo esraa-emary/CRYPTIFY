@@ -39,7 +39,6 @@
             // 
             button1.Anchor = AnchorStyles.Top;
             button1.BackColor = ColorTranslator.FromHtml("#31cb00");
-            button1.MaximumSize = new Size(300, 70);
             button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 255, 255);
@@ -57,7 +56,7 @@
             button1.MouseEnter += (s, e) =>
             {
                 button1.ForeColor = ColorTranslator.FromHtml("#31cb00");
-            }; 
+            };
             button1.MouseLeave += (s, e) =>
             {
                 button1.ForeColor = Color.FromArgb(18, 18, 18);
@@ -66,7 +65,6 @@
             // button2
             // 
             button2.Anchor = AnchorStyles.Top;
-            button2.MaximumSize = new Size(300, 70);
             button2.BackColor = ColorTranslator.FromHtml("#31cb00");
             button2.Cursor = Cursors.Hand;
             button2.FlatAppearance.BorderSize = 0;
@@ -103,7 +101,6 @@
             button3.Font = new Font("Segoe UI", 20F);
             button3.ForeColor = Color.FromArgb(18, 18, 18);
             button3.Location = new Point(615, 350);
-            button3.MaximumSize = new Size(300, 70);
             button3.Name = "button3";
             button3.Size = new Size(300, 70);
             button3.TabIndex = 5;

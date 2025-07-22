@@ -43,7 +43,7 @@ namespace Encryption_and_Decryption_Application_GUI
             // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20F);
             label1.Location = new Point(907, 122);
@@ -51,11 +51,10 @@ namespace Encryption_and_Decryption_Application_GUI
             label1.Size = new Size(196, 37);
             label1.TabIndex = 1;
             label1.Text = "Encryption Text";
-            label1.MaximumSize = new Size(196, 37);
             // 
             // button1
             // 
-            button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            button1.Anchor = AnchorStyles.Top;
             button1.BackColor = ColorTranslator.FromHtml("#31cb00");
             button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
@@ -79,11 +78,10 @@ namespace Encryption_and_Decryption_Application_GUI
             {
                 button1.ForeColor = Color.FromArgb(18, 18, 18);
             };
-            button1.MaximumSize = new Size(120, 40);
             // 
             // button2
             // 
-            button2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            button2.Anchor = AnchorStyles.Top;
             button2.BackColor = ColorTranslator.FromHtml("#31cb00");
             button2.Cursor = Cursors.Hand;
             button2.FlatAppearance.BorderSize = 0;
@@ -107,11 +105,10 @@ namespace Encryption_and_Decryption_Application_GUI
             {
                 button2.ForeColor = Color.FromArgb(18, 18, 18);
             };
-            button2.MaximumSize = new Size(120, 40);
             // 
             // button3
             // 
-            button3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            button3.Anchor = AnchorStyles.Top;
             button3.BackColor = ColorTranslator.FromHtml("#31cb00");
             button3.Cursor = Cursors.Hand;
             button3.FlatAppearance.BorderSize = 0;
@@ -135,11 +132,10 @@ namespace Encryption_and_Decryption_Application_GUI
             {
                 button3.ForeColor = Color.FromArgb(18, 18, 18);
             };
-            button3.MaximumSize = new Size(120, 40);
             // 
             // textBox1
             // 
-            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            textBox1.Anchor = AnchorStyles.Top;
             textBox1.BackColor = SystemColors.Window;
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Cursor = Cursors.IBeam;
@@ -151,11 +147,10 @@ namespace Encryption_and_Decryption_Application_GUI
             textBox1.PlaceholderText = "Input Text";
             textBox1.Size = new Size(300, 70);
             textBox1.TabIndex = 6;
-            textBox1.MaximumSize = new Size(300, 70);
             // 
             // toolStripContainer1
             // 
-            toolStripContainer1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            toolStripContainer1.Anchor = AnchorStyles.Top;
             // 
             // toolStripContainer1.ContentPanel
             // 
@@ -165,14 +160,12 @@ namespace Encryption_and_Decryption_Application_GUI
             toolStripContainer1.Size = new Size(300, 70);
             toolStripContainer1.TabIndex = 0;
             toolStripContainer1.Text = "toolStripContainer1";
-            toolStripContainer1.MaximumSize = new Size(300, 70);
             // 
             // button4
             // 
-            button4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            button4.Anchor = AnchorStyles.Top;
             button4.BackColor = ColorTranslator.FromHtml("#31cb00");
             button4.Enabled = false;
-            button4.MaximumSize = new Size(300, 70);
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Segoe UI", 15F);

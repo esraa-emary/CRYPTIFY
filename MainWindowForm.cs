@@ -18,15 +18,15 @@ namespace Encryption_and_Decryption_Application_GUI
 
         private void button2_Click(object sender, EventArgs e)
         {
-            BaconoianForm baconoian = new BaconoianForm();
-            baconoian.Show();
+            SimpleSubstitutionForm simpleSubstitution = new SimpleSubstitutionForm();
+            simpleSubstitution.Show();
             //this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            SimpleSubstitutionForm simpleSubstitution = new SimpleSubstitutionForm();
-            simpleSubstitution.Show();
+            BaconoianForm baconoian = new BaconoianForm();
+            baconoian.Show();
             //this.Hide();
         }
     }
